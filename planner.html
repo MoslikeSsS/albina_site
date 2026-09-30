@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D-планировщик — мебельная фабрика «Альбина»</title>
+<meta name="description" content="3D-планировщик фабрики «Альбина»: посмотрите корпусную мебель в своих размерах до замера. Что инструмент делает и чего не делает, как прислать проект на консультацию.">
+<meta property="og:title" content="3D-планировщик — фабрика «Альбина»">
+<meta property="og:description" content="Мебель в ваших размерах до замера. Честно о том, что инструмент умеет и что нет.">
+<meta property="og:image" content="/assets/img/catalog-og.webp">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html">
+      <img src="assets/img/logo-dark.svg" alt="Мебельная фабрика Альбина" width="176" height="36">
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Основное меню">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+        <li class="nav__item"><a class="nav__link" href="planner.html" aria-current="page">3D-планировщик</a></li>
+        <li class="nav__item"><a class="nav__link" href="about.html">О фабрике</a></li>
+        <li class="nav__item"><a class="nav__link" href="cases.html">Проекты</a></li>
+        <li class="nav__item"><a class="nav__link" href="delivery.html">Доставка и гарантия</a></li>
+        <li class="nav__item"><a class="nav__link" href="dealers.html">Дилерам</a></li>
+        <li class="nav__item"><a class="nav__link" href="faq.html">Вопросы</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a class="header__phone" href="tel:+78001013680" aria-label="Позвонить по номеру 8 800 101 36 80">8 800 101-36-80</a>
+      <a class="btn btn--primary btn--sm" href="contacts.html#consultation" data-magnetic>Консультация</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span>3D-планировщик</span>
+      </nav>
+      <div class="page-hero__inner">
+        <p class="eyebrow">Инструмент проектирования</p>
+        <h1 class="h1" data-lines><span class="line"><span>Посмотрите мебель</span></span><span class="line"><span>в своих размерах — до замера</span></span></h1>
+        <p class="lead">Планировщик показывает, как выбранная мебель встанет в ваше помещение: вы задаёте размеры комнаты, выбираете модель, подгоняете габариты и смотрите сцену с двух точек. Проект из планировщика становится основой спецификации.</p>
+        <p class="lead">При этом он не заменяет замер: по фото или чертежу нельзя снять неровность стены. Он нужен для другого — чтобы прийти на консультацию с готовой композицией и обсуждать конкретику, а не абстракции.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Демонстрация</p>
+        <h2 class="h2" data-lines><span class="line"><span>Схема помещения:</span></span><span class="line"><span>как это будет работать</span></span></h2>
+        <p class="lead">Ниже — статичная схема с двумя ползунками. Она показывает принцип: вы задаёте размеры комнаты, а инструмент перестраивает сцену под них.</p>
+      </div>
+
+      <div class="note">
+        <p><strong>Это демонстрация, а не работающий планировщик.</strong> На этом сайте полноценный 3D-модуль пока не подключён: трёхмерной сцены, перетаскивания моделей и сохранения проектов на этой странице нет. Схема ниже — упрощённая иллюстрация. Реальный инструмент подключается на этапе интеграции; запросить доступ к нему можно формой ниже.</p>
+      </div>
+
+      <!-- Параллакс здесь был бы смысловой ошибкой: вместе со схемой сдвигались бы
+           ползунки ширины и глубины, а управляющий элемент не должен уезжать из-под
+           курсора. Блок остаётся неподвижным. -->
+      <figure class="card mt-lg">
+        <div class="card__media">
+          <svg id="planner-demo-svg" viewBox="0 0 800 560" role="img"
+               aria-labelledby="planner-demo-title planner-demo-desc"
+               style="display:block;width:100%;height:auto">
+            <title id="planner-demo-title">Схема комнаты с корпусной мебелью</title>
+            <desc id="planner-demo-desc">Прямоугольник комнаты. Вдоль верхней стены — ряд корпусных шкафов, слева — высокий шкаф, справа — окно, внизу справа — дверь с дугой открывания. Размеры задаются ползунками под схемой.</desc>
+
+            <rect id="demo-room" x="40" y="40" width="720" height="480" fill="#F5F1E9" stroke="#1C1917" stroke-width="2"/>
+
+            <g id="demo-cabinets">
+              <rect id="demo-cab1" x="50" y="50" width="700" height="72" fill="#C69A64" fill-opacity="0.45" stroke="#8A6A42" stroke-width="1.5"/>
+              <line id="demo-cab-sep1" x1="243" y1="50" x2="243" y2="122" stroke="#8A6A42" stroke-width="1.5"/>
+              <line id="demo-cab-sep2" x1="437" y1="50" x2="437" y2="122" stroke="#8A6A42" stroke-width="1.5"/>
+              <line id="demo-cab-sep3" x1="630" y1="50" x2="630" y2="122" stroke="#8A6A42" stroke-width="1.5"/>
+            </g>
+
+            <rect id="demo-tall" x="50" y="140" width="60" height="216" fill="#C69A64" fill-opacity="0.45" stroke="#8A6A42" stroke-width="1.5"/>
+
+            <rect id="demo-window" x="752" y="208" width="8" height="144" fill="#1C1917"/>
+
+            <g id="demo-door">
+              <path id="demo-door-arc" d="M 700 520 A 120 120 0 0 1 820 520" fill="none" stroke="#A33B2E" stroke-width="1.5" stroke-dasharray="6 5"/>
+              <line id="demo-door-leaf" x1="700" y1="520" x2="700" y2="400" stroke="#A33B2E" stroke-width="2"/>
+            </g>
+
+            <rect id="demo-table" x="250" y="300" width="300" height="160" fill="#E3DED2" stroke="#C9C4B8" stroke-width="1.5"/>
+
+            <text id="demo-label-size" x="400" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#1C1917">4,2 × 3,6 м</text>
+            <text id="demo-label-note" x="400" y="318" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#57534E">схема условная, не 3D-сцена</text>
+          </svg>
+        </div>
+
+        <figcaption class="card__body">
+          <p class="eyebrow">Демонстрация</p>
+          <p class="card__title">Планировщик подключается на этапе интеграции</p>
+          <p class="card__meta">Ползунки меняют размеры комнаты и перестраивают схему. Это демонстрация принципа работы, а не сам инструмент: моделей каталога здесь нет, проект не сохраняется и никуда не отправляется.</p>
+
+          <div class="row">
+            <div class="field">
+              <label for="demo-width">Ширина комнаты, м</label>
+              <input id="demo-width" type="range" min="2" max="7" step="0.1" value="4.2"
+                     aria-describedby="demo-width-hint">
+              <p class="field__hint" id="demo-width-hint">Сейчас <output id="demo-width-out" for="demo-width" aria-live="polite">4,2</output> м</p>
+            </div>
+
+            <div class="field">
+              <label for="demo-depth">Глубина комнаты, м</label>
+              <input id="demo-depth" type="range" min="2" max="7" step="0.1" value="3.6"
+                     aria-describedby="demo-depth-hint">
+              <p class="field__hint" id="demo-depth-hint">Сейчас <output id="demo-depth-out" for="demo-depth" aria-live="polite">3,6</output> м</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <a class="btn btn--primary" href="#planner-access" data-magnetic>Запросить доступ к планировщику</a>
+            <a class="btn btn--ghost" href="#measure" data-magnetic>Записаться на замер</a>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Возможности</p>
+        <h2 class="h2" data-lines><span class="line"><span>Что делает планировщик</span></span></h2>
+        <p class="lead">Шесть вещей, которые инструмент позволяет сделать до замера.</p>
+      </div>
+
+      <div class="features" data-stagger>
+        <div class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28"><path d="M4 5h20v18H4zM4 14h8V5M12 14h12M12 14v9"/></svg>
+          </div>
+          <h3 class="feature__title">Задать размеры помещения</h3>
+          <p class="feature__text">Ввести длину и ширину комнаты в метрах — сцена построится под эти размеры.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28"><path d="M4 24V9l10-5 10 5v15M10 24v-8h8v8M9 12h2M17 12h2"/></svg>
+          </div>
+          <h3 class="feature__title">Выбрать категорию и модель</h3>
+          <p class="feature__text">Поставить в сцену позицию из каталога: комод, тумбу, шкаф, стеллаж, кухонный модуль.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28"><path d="M4 4v20M24 4v20M4 14h20M8 10l-4 4 4 4M20 10l4 4-4 4"/></svg>
+          </div>
+          <h3 class="feature__title">Подогнать размеры изделия</h3>
+          <p class="feature__text">Изменить ширину, высоту и глубину в пределах, которые позволяет конструкция.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28"><path d="M2 14s5-7 12-7 12 7 12 7-5 7-12 7S2 14 2 14z"/><circle cx="14" cy="14" r="3"/></svg>
+          </div>
+          <h3 class="feature__title">Посмотреть с двух точек</h3>
+          <p class="feature__text">Обойти сцену: вид сверху, вид от двери, вид из угла.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28"><path d="M5 4h13l5 5v15H5zM18 4v5h5M9 14h10M9 19h7"/></svg>
+          </div>
+          <h3 class="feature__title">Сохранить и передать проект</h3>
+          <p class="feature__text">Сохранить проект и отправить его на консультацию вместе с заявкой.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28"><path d="M7 4h14v20H7zM11 8h6M11 12h6M11 16h4"/></svg>
+          </div>
+          <h3 class="feature__title">Получить основу спецификации</h3>
+          <p class="feature__text">Из проекта формируется перечень позиций с габаритами — с этого начинается расчёт комплектации.</p>
+        </div>
+      </div>
+
+      <div class="note mt-lg">
+        <p>Планировщик показывает композицию, а не материал. Цвет, фактура и оттенок декора в 3D приблизительны — материал вы подбираете по образцам. Несовпадение оттенка на экране и на изделии не является браком: отображение цвета зависит от настроек дисплея.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Инструкция</p>
+        <h2 class="h2" data-lines><span class="line"><span>Как пользоваться</span></span></h2>
+        <p class="lead">Четыре шага. Сцена строится за несколько минут, регистрация не нужна.</p>
+      </div>
+
+      <ol class="steps" data-stagger>
+        <li class="steps__item">
+          <h3 class="steps__title">Откройте планировщик</h3>
+          <p class="steps__text">Нажмите «Начать проект» на этой странице или перейдите в планировщик из карточки товара. На экране — сцена с пустой комнатой.</p>
+        </li>
+        <li class="steps__item">
+          <h3 class="steps__title">Задайте размеры помещения</h3>
+          <p class="steps__text">Введите длину и ширину комнаты в метрах. Сцена перестроится под заданные габариты.</p>
+        </li>
+        <li class="steps__item">
+          <h3 class="steps__title">Поставьте модель и подгоните размеры</h3>
+          <p class="steps__text">Откройте каталог внутри планировщика, выберите позицию, измените ширину, высоту и глубину в пределах конструкции.</p>
+        </li>
+        <li class="steps__item">
+          <h3 class="steps__title">Сохраните и отправьте проект</h3>
+          <p class="steps__text">Передайте проект вместе с заявкой — инженер посмотрит композицию до разговора и обсудит с вами материалы и сроки.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <div class="split">
+        <div class="section__head">
+          <p class="eyebrow">Ограничения</p>
+          <h2 class="h2" data-lines><span class="line"><span>Чего планировщик</span></span><span class="line"><span>не делает</span></span></h2>
+          <p class="lead">Инструмент полезен ровно настолько, насколько честно о нём рассказано. Поэтому — список ограничений, а не достоинств.</p>
+        </div>
+
+        <div class="features" data-stagger>
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28"><path d="M4 24h20M6 24V9l8-5 8 5v15M11 24v-7h6v7M4 4l20 20"/></svg>
+            </div>
+            <h3 class="feature__title">Не заменяет замер</h3>
+            <p class="feature__text">По плану или фото нельзя снять неровность стены, кривизну пола и глубину ниши. Замер производит специалист на объекте.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28"><path d="M4 6h20v12H4zM8 22h12M14 18v4"/></svg>
+            </div>
+            <h3 class="feature__title">Не показывает материал точно</h3>
+            <p class="feature__text">Оттенок на экране зависит от настроек дисплея. Фактуру и цвет вы подбираете по физическим образцам.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28"><path d="M5 24V4M5 10h11a4 4 0 010 8H5M5 18h13a4 4 0 010 8H5"/></svg>
+            </div>
+            <h3 class="feature__title">Не учитывает коммуникации</h3>
+            <p class="feature__text">Розетки, вентиляция, плинтус и наклон стен учитываются на этапе проекта инженером, а не в сцене.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 28 28"><path d="M6 4h16v20H6zM10 9h8M10 13h8M10 19h4"/></svg>
+            </div>
+            <h3 class="feature__title">Не является замером и договором</h3>
+            <p class="feature__text">Проект — основа для разговора, а не спецификация. Заказ оформляется после замера и утверждения спецификации.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="note mt-lg">
+        <p><strong>Если планировщик недоступен или неудобен</strong> — это не тупик. Инструмент требует поддержки WebGL, а на телефоне планировать мельче и менее удобно: сцена меньше, управление — пальцем. Пришлите фото помещения и размеры ниш в заявке: инженер подготовит композицию и предложит варианты вручную.</p>
+      </div>
+
+      <div class="row mt-lg">
+        <a class="btn btn--primary" href="#measure" data-magnetic>Прислать фото и размеры</a>
+        <a class="btn btn--ghost" href="faq.html" data-magnetic>Частые вопросы о планировщике</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Связка</p>
+        <h2 class="h2" data-lines><span class="line"><span>Как проект попадает в работу</span></span></h2>
+        <p class="lead">От черновика в планировщику до спецификации — три шага, на каждом из которых есть ответственный.</p>
+      </div>
+
+      <div class="split split--reverse">
+        <figure class="card">
+          <div class="card__media">
+            <img src="assets/img/coll-teodora.webp" alt="Детская Теодора: композиция, собранная по размерам помещения" width="800" height="600" loading="lazy">
+          </div>
+          <figcaption class="card__body">
+            <p class="card__title">Результат — не картинка</p>
+            <p class="card__meta">Проект из планировщика становится основой спецификации, а не готовым заказом. Итоговые размеры всегда подтверждаются замером на объекте.</p>
+          </figcaption>
+        </figure>
+
+        <div>
+          <ol class="steps" data-stagger>
+            <li class="steps__item">
+              <h3 class="steps__title">Проект из планировщика → заявка</h3>
+              <p class="steps__text">Вы отправляете проект вместе с заявкой. Инженер видит композицию до разговора и готовит предметные варианты.</p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__title">Заявка → замер</h3>
+              <p class="steps__text">Специалист выезжает на объект и снимает реальные размеры ниш и проёмов, розетки, плинтус и вентиляцию.</p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__title">Замер → спецификация и договор</h3>
+              <p class="steps__text">Проект корректируется под реальные размеры, вы утверждаете спецификацию — и только после этого изделие уходит в производство.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="planner-access">
+    <div class="container">
+      <div class="split">
+        <div>
+          <div class="section__head">
+            <p class="eyebrow">Заявка</p>
+            <h2 class="h2" data-lines><span class="line"><span>Запросить доступ</span></span><span class="line"><span>к планировщику</span></span></h2>
+            <p class="lead">Полноценный 3D-модуль подключается на этапе интеграции сайта. Оставьте заявку — сообщим, когда инструмент будет доступен и в каком объёме.</p>
+          </div>
+          <p class="prose">Если вам нужна композиция прямо сейчас, не ждите интеграции: заполните <a class="link" href="#measure">заявку на замер</a> или пришлите фото и размеры — инженер подготовит варианты вручную.</p>
+        </div>
+
+        <div>
+          <form class="form form--wide" data-form="lead"
+                data-success="Заявка принята. Свяжемся с вами в течение рабочего дня."
+                data-success-delay="5000">
+            <div class="field">
+              <label for="pa-name">Имя <span aria-hidden="true">*</span></label>
+              <input id="pa-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__hint">Как к вам обращаться</p>
+            </div>
+
+            <div class="field">
+              <label for="pa-phone">Телефон <span aria-hidden="true">*</span></label>
+              <input id="pa-phone" name="phone" type="tel" autocomplete="tel" required
+                     data-mask="phone" data-phone-prefix="+7" placeholder="+7 (___) ___-__-__">
+              <p class="field__hint">Номер, по которому удобно позвонить</p>
+            </div>
+
+            <div class="field">
+              <label for="pa-email">E-mail</label>
+              <input id="pa-email" name="email" type="email" autocomplete="email" placeholder="name@mail.ru">
+              <p class="field__hint">Пришлём уведомление, когда планировщик откроется</p>
+            </div>
+
+            <div class="field">
+              <label for="pa-comment">Комментарий</label>
+              <textarea id="pa-comment" name="comment" rows="3" placeholder="Какие категории и задачи планируете решать в планировщике"></textarea>
+              <p class="field__hint">Поможет понять, что должно быть в первой версии инструмента</p>
+            </div>
+
+            <div class="field field--check">
+              <input id="pa-consent" name="consent" type="checkbox" data-consent required>
+              <label for="pa-consent">Согласен на обработку персональных данных в соответствии с <a class="link" href="privacy.html">политикой конфиденциальности</a>.</label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--primary btn--lg" type="submit" data-magnetic>Запросить доступ</button>
+              <p class="form__note">Свяжемся в течение рабочего дня. Если удобнее созвониться сразу — 8 800 101-36-80.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="measure">
+    <div class="container">
+      <div class="split">
+        <div>
+          <div class="section__head">
+            <p class="eyebrow">Замер</p>
+            <h2 class="h2" data-lines><span class="line"><span>Заявка на замер</span></span></h2>
+            <p class="lead">Замер — единственный способ узнать реальные размеры ниш, розеток и проёмов. Специалист приедет и снимет их сам.</p>
+          </div>
+
+          <div class="features" data-stagger>
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 28 28"><path d="M3 12h18l4-4v12l-4-4H3zM21 12a3 3 0 010 6M8 12v6h3v-6"/></svg>
+              </div>
+              <h3 class="feature__title">Что снимаем</h3>
+              <p class="feature__text">Ширину, высоту и глубину ниш и проёмов, положение розеток, плинтуса, вентиляции и неровности стен.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 28 28"><path d="M4 23h20M6 23V5h16v18M10 10h8M10 14h8"/></svg>
+              </div>
+              <h3 class="feature__title">Что вы получаете</h3>
+              <p class="feature__text">Чертёж замера, композицию и спецификацию с расчётом — до договора и без обязательств.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form class="form form--wide" data-form="lead"
+                data-success="Заявка принята. Свяжемся с вами в течение рабочего дня и согласуем дату замера."
+                data-success-delay="5000">
+            <div class="field">
+              <label for="ms-name">Имя <span aria-hidden="true">*</span></label>
+              <input id="ms-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__hint">Как к вам обращаться</p>
+            </div>
+
+            <div class="field">
+              <label for="ms-phone">Телефон <span aria-hidden="true">*</span></label>
+              <input id="ms-phone" name="phone" type="tel" autocomplete="tel" required
+                     data-mask="phone" data-phone-prefix="+7" placeholder="+7 (___) ___-__-__">
+              <p class="field__hint">Номер, по которому удобно позвонить</p>
+            </div>
+
+            <div class="field">
+              <label for="ms-email">E-mail</label>
+              <input id="ms-email" name="email" type="email" autocomplete="email" placeholder="name@mail.ru">
+              <p class="field__hint">Пришлём план замера и расчёт письмом</p>
+            </div>
+
+            <div class="field">
+              <label for="ms-address">Город и адрес объекта <span aria-hidden="true">*</span></label>
+              <input id="ms-address" name="address" type="text" autocomplete="street-address" required
+                     placeholder="Город, улица, дом, квартира, этаж">
+              <p class="field__hint">От адреса зависит, выезжает ли замерная бригада</p>
+            </div>
+
+            <div class="field">
+              <label for="ms-time">Когда удобно позвонить</label>
+              <select id="ms-time" name="time">
+                <option value="">В любое время</option>
+                <option>Утро 9:00–12:00</option>
+                <option>День 12:00–15:00</option>
+                <option>Вечер 15:00–20:00</option>
+              </select>
+              <p class="field__hint">Выберите интервал: утро, день или вечер</p>
+            </div>
+
+            <div class="field">
+              <label for="ms-comment">Что планируете изготовить</label>
+              <textarea id="ms-comment" name="comment" rows="3"
+                        placeholder="Категории, помещения, что должно помещаться в мебель, сроки"></textarea>
+              <p class="field__hint">Чем конкретнее описание, тем предметнее замер</p>
+            </div>
+
+            <div class="field field--check">
+              <input id="ms-consent" name="consent" type="checkbox" data-consent required>
+              <label for="ms-consent">Согласен на обработку персональных данных в соответствии с <a class="link" href="privacy.html">политикой конфиденциальности</a>.</label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--primary btn--lg" type="submit" data-magnetic>Записаться на замер</button>
+              <p class="form__note">Согласуем дату и время по телефону. Выезд по Пензенской области при заказе — бесплатный.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="container">
+      <div class="banner__inner">
+        <div class="banner__text">
+          <h2 class="h2" data-lines><span class="line"><span>Обсудим ваш проект</span></span></h2>
+          <p>Отправьте фото и размеры — инженер посмотрит их до разговора. На консультации обсудите конкретику: материалы, фурнитуру, сроки.</p>
+        </div>
+        <div class="banner__actions">
+          <a class="btn btn--primary" href="#measure" data-magnetic>Отправить фото и размеры</a>
+          <a class="btn btn--light" href="tel:+78001013680" data-magnetic>8 800 101-36-80</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <h2 class="footer__title">Каталог</h2>
+        <ul class="footer__list">
+          <li><a href="catalog.html#prihozhie">Прихожие</a></li>
+          <li><a href="catalog.html#gostinye">Гостиные</a></li>
+          <li><a href="catalog.html#spalni">Спальни</a></li>
+          <li><a href="catalog.html#detskie">Детские</a></li>
+          <li><a href="catalog.html#malye-formy">Малые формы</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Покупателю</h2>
+        <ul class="footer__list">
+          <li><a href="planner.html">3D-планировщик</a></li>
+          <li><a href="delivery.html">Доставка и гарантия</a></li>
+          <li><a href="faq.html">Частые вопросы</a></li>
+          <li><a href="contacts.html#consultation">Консультация</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Дилерам</h2>
+        <ul class="footer__list">
+          <li><a href="dealers.html">Условия для дилеров</a></li>
+          <li><a href="dealers.html#prays">Прайс и образцы</a></li>
+          <li><a href="dealers.html#logistika">Логистика и отгрузка</a></li>
+          <li><a href="dealers.html#zayavka">Заявка на прайс</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Контакты</h2>
+        <ul class="footer__list">
+          <li><a href="tel:+78001013680">8 800 101-36-80</a></li>
+          <li><a href="contacts.html">ул. Пензенская, 130,<br>г. Кузнецк</a></li>
+          <li><a href="mailto:zakaz@albina-mebel.ru">zakaz@albina-mebel.ru</a></li>
+          <li>Пн–Пт 8:00–18:00, Сб 9:00–15:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span class="footer__year" data-year>2025</span> Мебельная фабрика «Альбина»</p>
+      <p>Пензенская обл., г. Кузнецк, ул. Пензенская, 130</p>
+      <a class="link link--light" href="privacy.html">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn--primary mobile-cta" href="contacts.html#consultation" data-magnetic>Записаться на консультацию</a>
+
+<script>
+/* Демонстрационная схема: меняет размеры комнаты по ползункам.
+   Изолирована в IIFE и проверяет наличие элементов — остальной скрипт не затрагивает. */
+(function () {
+  var svg = document.getElementById('planner-demo-svg');
+  var widthInput = document.getElementById('demo-width');
+  var depthInput = document.getElementById('demo-depth');
+  if (!svg || !widthInput || !depthInput) return;
+
+  var widthOut = document.getElementById('demo-width-out');
+  var depthOut = document.getElementById('demo-depth-out');
+  var label = document.getElementById('demo-label-size');
+
+  var BOX_W = 800, BOX_H = 560, PAD = 40;
+  var DEPTH_M = 0.6;   /* Глубина корпусной мебели, м */
+  var DOOR_M = 0.9;    /* Ширина дверного проёма, м */
+
+  function num(value, fallback) {
+    var parsed = parseFloat(String(value).replace(',', '.'));
+    return isFinite(parsed) && parsed > 0 ? parsed : fallback;
+  }
+
+  function fmt(value) {
+    return value.toFixed(1).replace('.', ',');
+  }
+
+  function set(id, attrs) {
+    var node = document.getElementById(id);
+    if (!node) return;
+    for (var key in attrs) {
+      if (Object.prototype.hasOwnProperty.call(attrs, key)) {
+        node.setAttribute(key, attrs[key]);
+      }
+    }
+  }
+
+  function render() {
+    var w = num(widthInput.value, 4.2);   /* ширина, м */
+    var d = num(depthInput.value, 3.6);   /* глубина, м */
+
+    var scale = Math.min((BOX_W - PAD * 2) / w, (BOX_H - PAD * 2) / d);
+    var rw = w * scale;
+    var rh = d * scale;
+    var rx = (BOX_W - rw) / 2;
+    var ry = (BOX_H - rh) / 2;
+
+    var cabDepth = Math.max(DEPTH_M * scale, 18);
+    var inset = Math.max(rw * 0.008, 4);
+    var cabX = rx + inset;
+    var cabW = rw - inset * 2;
+    var cabY = ry + inset;
+    var quarter = cabW / 4;
+
+    set('demo-room', { x: rx, y: ry, width: rw, height: rh });
+    set('demo-cab1', { x: cabX, y: cabY, width: cabW, height: cabDepth });
+    set('demo-cab-sep1', { x1: cabX + quarter, y1: cabY, x2: cabX + quarter, y2: cabY + cabDepth });
+    set('demo-cab-sep2', { x1: cabX + quarter * 2, y1: cabY, x2: cabX + quarter * 2, y2: cabY + cabDepth });
+    set('demo-cab-sep3', { x1: cabX + quarter * 3, y1: cabY, x2: cabX + quarter * 3, y2: cabY + cabDepth });
+
+    set('demo-tall', {
+      x: cabX,
+      y: cabY + cabDepth + Math.max(rh * 0.04, 6),
+      width: cabDepth,
+      height: rh * 0.45
+    });
+
+    set('demo-window', {
+      x: rx + rw - Math.max(4, rw * 0.006),
+      y: ry + rh * 0.35,
+      width: Math.max(4, rw * 0.006),
+      height: rh * 0.3
+    });
+
+    var doorW = Math.min(DOOR_M * scale, rw * 0.35);
+    var doorX = rx + rw - inset - doorW;
+    var doorY = ry + rh - inset;
+    var doorNode = document.getElementById('demo-door-arc');
+    if (doorNode) {
+      doorNode.setAttribute('d',
+        'M ' + (doorX) + ' ' + (doorY - doorW) +
+        ' A ' + doorW + ' ' + doorW + ' 0 0 1 ' + (doorX + doorW) + ' ' + doorY);
+    }
+    set('demo-door-leaf', { x1: doorX, y1: doorY, x2: doorX, y2: doorY - doorW });
+
+    set('demo-table', {
+      x: rx + rw * 0.26,
+      y: ry + rh * 0.48,
+      width: rw * 0.48,
+      height: rh * 0.34
+    });
+
+    if (widthOut) widthOut.textContent = fmt(w);
+    if (depthOut) depthOut.textContent = fmt(d);
+    if (label) {
+      label.setAttribute('x', rx + rw / 2);
+      label.setAttribute('y', ry + rh * 0.44);
+      label.textContent = fmt(w) + ' × ' + fmt(d) + ' м';
+    }
+  }
+
+  widthInput.addEventListener('input', render);
+  depthInput.addEventListener('input', render);
+  widthInput.addEventListener('change', render);
+  depthInput.addEventListener('change', render);
+  render();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог корпусной мебели — фабрика «Альбина», Кузнецк</title>
+  <meta name="description" content="Корпусная мебель фабрики «Альбина» с 1997 года: двенадцать категорий, подбор по размерам ниши, расчёт комплектации и сборка на объекте.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <img src="assets/img/logo-dark.svg" alt="Мебельная фабрика Альбина" width="104" height="47">
+        </a>
+
+        <nav class="nav" id="site-nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link is-active" href="catalog.html" aria-current="page">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="planner.html">3D-планировщик</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О фабрике</a></li>
+            <li class="nav__item"><a class="nav__link" href="cases.html">Проекты</a></li>
+            <li class="nav__item"><a class="nav__link" href="delivery.html">Доставка и гарантия</a></li>
+            <li class="nav__item"><a class="nav__link" href="dealers.html">Дилерам</a></li>
+            <li class="nav__item"><a class="nav__link" href="faq.html">Вопросы</a></li>
+          </ul>
+          <a class="btn btn--primary nav__cta" href="contacts.html#consultation" data-magnetic>Записаться на консультацию</a>
+        </nav>
+
+        <div class="header__actions">
+          <a class="header__phone" href="tel:88001013680">8-800-101-36-80</a>
+          <a class="btn btn--primary btn--sm" href="contacts.html#consultation" data-magnetic>Консультация</a>
+        </div>
+
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ШАПКА СТРАНИЦЫ -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a>
+            <span aria-current="page">Каталог</span>
+          </nav>
+          <span class="eyebrow">Каталог</span>
+          <h1 class="h1" data-lines><span class="line"><span>Корпусная мебель,</span></span><span class="line"><span>собранная под ваш проём</span></span></h1>
+          <p class="lead">Двенадцать категорий, сорок с лишним моделей и подбор по размерам ниши. Производство в Кузнецке с 1997 года: раскрой, кромка, присадка и сборка — на своём оборудовании.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАТЕГОРИИ: БЕНТО 12×N. Подпись .bento__meta обязательна у каждой плитки. -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Категории</span>
+          <h2 class="h2" data-lines><span class="line"><span>Двенадцать направлений</span></span><span class="line"><span>корпусной мебели</span></span></h2>
+          <p class="lead">Начните с категории — внутри неё габариты, материалы и наличие. Если не уверены, в какой именно, откройте консультацию: подберём по проёму и задаче.</p>
+        </div>
+
+        <!-- ДЕМО-ДАННЫЕ: счётчики «N моделей» в каждой категории. Заменить на фактическое количество позиций из учётной системы фабрики. -->
+        <div class="bento" data-stagger>
+          <a class="bento--lg" href="catalog.html?category=gostinye">
+            <div class="bento__media"><img src="assets/img/cat-gostinye.webp" alt="Корпусная мебель для гостиной" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Гостиные</h3>
+              <p class="bento__meta">Стенки, тумбы под ТВ, системы хранения. Гостиная Ника — одно из решений.</p>
+              <p class="bento__meta">6 моделей</p>
+            </div>
+          </a>
+
+          <a class="bento--md" href="catalog.html?category=prihozhaya">
+            <div class="bento__media"><img src="assets/img/cat-prihozhaya.webp" alt="Прихожие, шкафы-обувные и вешалки" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Прихожие</h3>
+              <p class="bento__meta">Шкафы-купе, тумбы и малые формы под узкий проём. Вещи у стены, а не в проходе.</p>
+              <p class="bento__meta">5 моделей</p>
+            </div>
+          </a>
+
+          <a class="bento--md" href="catalog.html?category=spalnya">
+            <div class="bento__media"><img src="assets/img/cat-spalnya.webp" alt="Спальни и кровати из массива и ЛДСП" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Спальни</h3>
+              <p class="bento__meta">Шкафы, комоды и системы хранения. Шкафы подходят под нишу от пола до потолка.</p>
+              <p class="bento__meta">7 моделей</p>
+            </div>
+          </a>
+
+          <a href="catalog.html?category=detskie">
+            <div class="bento__media"><img src="assets/img/cat-detskie.webp" alt="Детская мебель для детской комнаты" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Детские</h3>
+              <p class="bento__meta">Рабочее место, хранение и порядок в комнате, где играют. Детская Теодора — базовая компоновка.</p>
+              <p class="bento__meta">3 модели</p>
+            </div>
+          </a>
+
+          <a href="catalog.html?category=kabinet">
+            <div class="bento__media"><img src="assets/img/cat-kabinet.webp" alt="Кабинетная мебель и рабочие столы" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Кабинет</h3>
+              <p class="bento__meta">Рабочий стол, тумбы, системы хранения. Мебель, которая держит форму в течение дня.</p>
+              <p class="bento__meta">4 модели</p>
+            </div>
+          </a>
+
+          <a href="catalog.html?category=divany">
+            <div class="bento__media"><img src="assets/img/cat-divany.webp" alt="Диваны и мягкая мебель для дома" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Диваны</h3>
+              <p class="bento__meta">Мягкие элементы, которые дополняют корпусные интерьеры и ставятся в один проект с мебелью.</p>
+              <p class="bento__meta">3 модели</p>
+            </div>
+          </a>
+
+          <a href="catalog.html?category=shkafy-kupe">
+            <div class="bento__media"><img src="assets/img/cat-shkafy-kupe.webp" alt="Шкафы-купе на заказ по индивидуальным размерам" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Шкафы-купе</h3>
+              <p class="bento__meta">Бруно, Заря, Фаворит и другие решения под проём. Раздвижная система не требует места для открывания.</p>
+              <p class="bento__meta">4 модели</p>
+            </div>
+          </a>
+
+          <a href="catalog.html?category=malye-formy">
+            <div class="bento__media"><img src="assets/img/cat-malye-formy.webp" alt="Комоды, тумбы и малые формы мебели" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Малые формы</h3>
+              <p class="bento__meta">Комоды, открытые стеллажи и тумбы. Подбираются под ширину ниши и под нужную высоту.</p>
+              <p class="bento__meta">7 моделей</p>
+            </div>
+          </a>
+
+          <a href="catalog.html?category=gotovye-kuxni">
+            <div class="bento__media"><img src="assets/img/cat-gotovye-kuxni.webp" alt="Готовые кухни из готовых модулей" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Готовые решения кухонь</h3>
+              <p class="bento__meta">Комплекты, собранные в единый проект: размеры модулей известны, смета не меняется при монтаже.</p>
+              <p class="bento__meta">5 комплектов</p>
+            </div>
+          </a>
+
+          <a href="catalog.html?category=shkafy">
+            <div class="bento__media"><img src="assets/img/cat-shkafy.webp" alt="Шкафы и корпусные системы хранения" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Шкафы</h3>
+              <p class="bento__meta">Распашные и раздвижные корпуса — под проём и под способ хранения вещей.</p>
+              <p class="bento__meta">6 моделей</p>
+            </div>
+          </a>
+
+          <a href="catalog.html?category=modulnye-kuxni">
+            <div class="bento__media"><img src="assets/img/cat-modulnye-kuxni.webp" alt="Модульные кухни из отдельных модулей" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Модульные кухни</h3>
+              <p class="bento__meta">Модульная система «Ева» и другие ряды: собираются под задачу и под размер помещения.</p>
+              <p class="bento__meta">4 ряда</p>
+            </div>
+          </a>
+
+          <a href="catalog.html?category=sistemy-hraneniya">
+            <div class="bento__media"><img src="assets/img/cat-sistemy-hraneniya.webp" alt="Системы хранения для квартиры и дома" width="1200" height="900" loading="lazy"></div>
+            <div class="bento__body">
+              <h3 class="bento__title">Системы хранения</h3>
+              <p class="bento__meta">Система хранения Бланка и комплексные решения, когда вещей больше, чем места.</p>
+              <p class="bento__meta">3 модели</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФИЛЬТРЫ И СПИСОК -->
+    <section class="section section--tint" id="catalog-list">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Подбор</span>
+          <h2 class="h2" data-lines><span class="line"><span>Модели в подборке</span></span></h2>
+          <p class="lead">Сначала сузьте выбор, потом сравнивайте: в карточке есть габариты, материалы и спецификация целиком.</p>
+        </div>
+
+        <!-- ШИРОКАЯ ПОЛОСА ФИЛЬТРОВ: широкая карточка во всю ширину контейнера,
+             результаты — под ней отдельной сеткой. -->
+        <!-- ДЕМО-ДАННЫЕ: значения фильтров и подсчёт моделей в скобках — демонстрационные.
+             Заменить на реальные перечни материалов, декоров и наличия из учётной системы фабрики.
+             В рабочей версии это чекбоксы с видимыми подписями и счётчиками рядом с каждым значением. -->
+        <div class="card" id="catalog-filters">
+          <div class="card__body">
+            <div class="grid" data-stagger>
+              <div class="col-4">
+                <div class="field">
+                  <label for="f-category">Категория</label>
+                  <select id="f-category" name="category">
+                    <option value="">Все категории</option>
+                    <option value="malye-formy" selected>Малые формы (7)</option>
+                    <option value="shkafy-kupe">Шкафы-купе (4)</option>
+                    <option value="shkafy">Шкафы (6)</option>
+                    <option value="sistemy-hraneniya">Системы хранения (3)</option>
+                    <option value="gostinye">Гостиные (6)</option>
+                    <option value="prihozhaya">Прихожие (5)</option>
+                    <option value="spalnya">Спальни (7)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="field">
+                  <label for="f-collection">Коллекция</label>
+                  <select id="f-collection" name="collection" aria-describedby="f-collection-hint">
+                    <option value="">Все коллекции</option>
+                    <option value="madera" selected>Комод Мадера — 7 модификаций</option>
+                    <option value="vega">Комод Вега 1200</option>
+                    <option value="venetsiya">Комод Венеция 1332 ПВШ</option>
+                    <option value="lotos">Комод Лотос Л4</option>
+                    <option value="sevil">Комод Севиль</option>
+                    <option value="ornella">Тумба Орнелла</option>
+                    <option value="blanka">Система хранения Бланка</option>
+                    <option value="bruno">Шкафы Бруно</option>
+                    <option value="zarya">Шкафы Заря</option>
+                    <option value="favorit">Шкафы Фаворит</option>
+                  </select>
+                  <p class="field__hint" id="f-collection-hint">Семейство Мадера: К3М, К4М, К6М, К10М, К700, 1200,8, 1384.</p>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="field">
+                  <label for="f-material">Материал</label>
+                  <select id="f-material" name="material">
+                    <option value="">Любой материал</option>
+                    <option value="ldsp-egger" selected>ЛДСП Egger, 16 мм</option>
+                    <option value="ldsp-penka">ЛДСП в плёнке</option>
+                    <option value="shpon-dub">Шпон дуба</option>
+                  </select>
+                  <!-- ДЕМО-ДАННЫЕ: перечень материалов (Egger и шпон дуба). Заменить на фактический список поставщиков фабрики. -->
+                  <p class="field__hint">Корпус — ЛДСП 16 мм; фасады — ЛДСП в плёнке или шпон дуба.</p>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="field">
+                  <label for="f-color">Цвет и отделка</label>
+                  <select id="f-color" name="color">
+                    <option value="">Любой цвет</option>
+                    <option value="dub-sonoma" selected>Дуб сонома</option>
+                    <option value="belyy">Белый</option>
+                    <option value="grafit">Графит</option>
+                    <option value="beton">Бетон</option>
+                  </select>
+                  <!-- ДЕМО-ДАННЫЕ: палитра декоров (дуб сонома, белый, графит, бетон). Заменить на фактические декоры с кодами. -->
+                  <p class="field__hint">Палитра фабрики уточняется на консультации — показываем образцы.</p>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="field">
+                  <label for="f-width">Ширина, мм</label>
+                  <input id="f-width" name="width" type="number" inputmode="numeric" min="1" max="3000" step="1" placeholder="Например, 1200">
+                  <!-- ДЕМО-ДАННЫЕ: допустимый диапазон ширины 1–3000 мм. Заменить на реальные диапазоны по категориям. -->
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="field">
+                  <label for="f-height">Высота, мм</label>
+                  <input id="f-height" name="height" type="number" inputmode="numeric" min="1" max="3000" step="1" placeholder="Например, 750">
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="field">
+                  <label for="f-depth">Глубина, мм</label>
+                  <input id="f-depth" name="depth" type="number" inputmode="numeric" min="1" max="1000" step="1" placeholder="Например, 450">
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="field">
+                  <label for="f-stock">Наличие</label>
+                  <select id="f-stock" name="stock">
+                    <option value="">Любая доступность</option>
+                    <option value="v-nalichii">В наличии на фабрике (4)</option>
+                    <option value="pod-zakaz">Под заказ 30–40 дней (6)</option>
+                  </select>
+                  <!-- ДЕМО-ДАННЫЕ: сроки производства 30–40 дней и остатки. Заменить на фактические. -->
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="field">
+                  <label for="f-sort">Сортировка</label>
+                  <select id="f-sort" name="sort" aria-describedby="f-sort-hint">
+                    <option value="default" selected>По умолчанию</option>
+                    <option value="new">Сначала новинки</option>
+                    <option value="price-asc">От меньшей цены к большей</option>
+                    <option value="price-desc">От большей цены к меньшей</option>
+                    <option value="width">По ширине</option>
+                    <option value="name">По названию, А → Я</option>
+                  </select>
+                  <p class="field__hint" id="f-sort-hint">Как рекомендует фабрика.</p>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <a class="btn btn--ghost u-full" href="catalog.html">Сбросить фильтры</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- АКТИВНЫЕ ФИЛЬТРЫ -->
+        <div class="row" aria-label="Выбранные фильтры">
+          <span class="muted small">Выбрано:</span>
+          <button class="tag" type="button" aria-label="Убрать фильтр: Категория — Малые формы">Малые формы <span aria-hidden="true">×</span></button>
+          <button class="tag" type="button" aria-label="Убрать фильтр: Коллекция — Комод Мадера">Коллекция — Мадера <span aria-hidden="true">×</span></button>
+          <button class="tag" type="button" aria-label="Убрать фильтр: Материал — ЛДСП Egger, 16 мм">ЛДСП Egger, 16 мм <span aria-hidden="true">×</span></button>
+          <button class="tag" type="button" aria-label="Убрать фильтр: Цвет — дуб сонома">Дуб сонома <span aria-hidden="true">×</span></button>
+          <a class="link small" href="catalog.html">Сбросить фильтры</a>
+        </div>
+
+        <p class="muted small" aria-live="polite">Показано 10 из 78 моделей</p>
+
+        <!-- ДЕМО-ДАННЫЕ: сетка товаров. Характеристики и цены — демонстрационные:
+             корпус ЛДСП Egger 16 мм, фасады ЛДСП в плёнке либо шпон дуба,
+             направляющие на шариковых подшипниках, петли Blum,
+             цены 8 900–68 000&nbsp;₽, старая цена — предыдущая редакция прайса.
+             Заменить на фактические данные из учётной системы фабрики. -->
+        <div class="cards" id="products" data-stagger>
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-vega.webp" alt="Вега Комод 1200" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="tag">Малые формы</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Комод Вега 1200 — открыть карточку">Вега, комод 1200</a></h3>
+              <p class="card__meta">1200 × 780 × 450 мм · корпус ЛДСП Egger 16 мм, фасады в плёнке</p>
+              <p class="price">11 300&nbsp;₽<span class="price--old">12 700&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-venetsiya.webp" alt="Венеция Комод 1332 ПВШ" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="tag">Малые формы</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Комод Венеция 1332 ПВШ — открыть карточку">Венеция, комод 1332 ПВШ</a></h3>
+              <p class="card__meta">1332 × 820 × 460 мм · корпус ЛДСП, фасады — шпон дуба</p>
+              <p class="price">46 800&nbsp;₽<span class="price--old">51 400&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-lotos.webp" alt="Лотос Комод Л4" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="tag">Малые формы</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Комод Лотос Л4 — открыть карточку">Лотос, комод Л4</a></h3>
+              <p class="card__meta">900 × 1100 × 450 мм · корпус и фасады ЛДСП Egger 16 мм</p>
+              <p class="price">22 600&nbsp;₽<span class="price--old">25 100&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-madera.webp" alt="Мадера Комод 1200,8" width="1200" height="900" loading="lazy" fetchpriority="high">
+            </div>
+            <div class="card__body">
+              <span class="tag">Малые формы · 7 модификаций</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Комод Мадера 1200,8 — открыть карточку">Мадера, комод 1200,8</a></h3>
+              <p class="card__meta">1200,8 × 750 × 450 мм · ЛДСП Egger 16 мм, фасады в плёнке</p>
+              <p class="price">21 700&nbsp;₽<span class="price--old">23 900&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-sevil.webp" alt="Севиль Комод 4 ящика" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="tag">Малые формы</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Комод Севиль, 4 ящика — открыть карточку">Севиль, комод 4 ящика</a></h3>
+              <p class="card__meta">1080 × 860 × 480 мм · корпус ЛДСП, фасады — шпон дуба</p>
+              <p class="price">27 900&nbsp;₽<span class="price--old">30 600&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-ornella.webp" alt="Орнелла" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="tag">Малые формы</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Тумба Орнелла — открыть карточку">Орнелла, тумба</a></h3>
+              <p class="card__meta">600 × 750 × 400 мм · корпус и фасады ЛДСП Egger 16 мм</p>
+              <p class="price">8 900&nbsp;₽<span class="price--old">9 600&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-blanka.webp" alt="Система хранения Бланка" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="tag">Системы хранения</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Система хранения Бланка — открыть карточку">Бланка, система хранения</a></h3>
+              <p class="card__meta">1800 × 2000 × 400 мм · ЛДСП Egger 16 мм, направляющие на шариках</p>
+              <p class="price">64 800&nbsp;₽<span class="price--old">68 000&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-bruno.webp" alt="Шкафы Бруно" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="tag">Шкафы-купе</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Шкафы Бруно — открыть карточку">Бруно, шкафы-купе</a></h3>
+              <p class="card__meta">2400 × 2400 × 600 мм · ЛДСП Egger 16 мм, раздвижная система</p>
+              <p class="price">67 900&nbsp;₽<span class="price--old">72 400&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-zarya.webp" alt="Шкафы Заря" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="tag">Шкафы-купе</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Шкафы Заря — открыть карточку">Заря, шкафы-купе</a></h3>
+              <p class="card__meta">2000 × 2500 × 600 мм · ЛДСП Egger 16 мм, фасады в плёнке</p>
+              <p class="price">58 400&nbsp;₽<span class="price--old">63 000&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/img/prod-favorit.webp" alt="Шкафы Фаворит" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="tag">Шкафы</span>
+              <h3 class="card__title"><a class="link" href="product.html" aria-label="Шкафы Фаворит — открыть карточку">Фаворит, шкафы</a></h3>
+              <p class="card__meta">1800 × 2300 × 580 мм · ЛДСП Egger 16 мм, распашные фасады</p>
+              <p class="price">49 600&nbsp;₽<span class="price--old">53 800&nbsp;₽</span></p>
+              <p class="card__actions"><a class="btn btn--sm btn--ghost" href="planner.html">Добавить в 3D-проект</a></p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ПАГИНАЦИЯ -->
+        <!-- ДЕМО-ДАННЫЕ: «Показано 10 из 78», 8 страниц. Заменить на фактическое количество моделей. -->
+        <nav class="row" aria-label="Постраничная навигация">
+          <a class="btn btn--ghost btn--sm" href="catalog.html" aria-label="Предыдущая страница">Назад</a>
+          <a class="btn btn--ghost btn--sm" href="catalog.html" aria-current="page">1</a>
+          <a class="btn btn--ghost btn--sm" href="catalog.html?page=2">2</a>
+          <a class="btn btn--ghost btn--sm" href="catalog.html?page=3">3</a>
+          <span class="muted" aria-hidden="true">…</span>
+          <a class="btn btn--ghost btn--sm" href="catalog.html?page=8">8</a>
+          <a class="btn btn--ghost btn--sm" href="catalog.html?page=2" aria-label="Следующая страница" data-magnetic>Вперёд</a>
+        </nav>
+        <p class="muted small">Страница 1 из 8. Показано 10 из 78.</p>
+
+        <!-- ПУСТОЕ СОСТОЯНИЕ: показывается вместо сетки, когда фильтры ничего не дали.
+             Три выхода из тупика: сбросить фильтры, посчитать под размеры, открыть корень каталога. -->
+        <div class="note">
+          <h3 class="h3">По этим условиям моделей нет</h3>
+          <p>Под выбранные параметры не подошла ни одна модель. Снимите часть условий — или пришлите размеры ниши, и мы посчитаем, что можно сделать под них.</p>
+          <div class="row">
+            <a class="btn btn--ghost btn--sm" href="catalog.html">Сбросить фильтры</a>
+            <a class="btn btn--ghost btn--sm" href="contacts.html#consultation">Посчитать под мои размеры</a>
+            <a class="btn btn--ghost btn--sm" href="catalog.html">Смотреть все категории</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРИЗЫВ К КОНСУЛЬТАЦИИ -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner__inner">
+          <div class="banner__text">
+            <h2 class="h2" data-lines><span class="line"><span>Соберём комплект</span></span><span class="line"><span>под ваш проём</span></span></h2>
+            <p>Пришлите размеры ниши или фото проёма — вернёмся с комплектацией, ценой и сроком. Замер по Пензенской области делаем бесплатно.</p>
+          </div>
+          <div class="banner__actions">
+            <a class="btn btn--primary btn--lg" href="contacts.html#consultation" data-magnetic>Записаться на консультацию</a>
+            <a class="btn btn--light btn--lg" href="tel:88001013680" data-magnetic>8-800-101-36-80</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- НЕ НАШЛИ НУЖНЫЙ РАЗМЕР: текст слева (5 кол), форма справа (7 кол) -->
+    <section class="section" id="consultation-size">
+      <div class="container">
+        <div class="split">
+          <div class="stack">
+            <span class="eyebrow">Подбор по размерам</span>
+            <h2 class="h2" data-lines><span class="line"><span>Не нашли</span></span><span class="line"><span>подходящий размер?</span></span></h2>
+            <p class="prose">Корпусная мебель подбирается под проём. Пришлите размеры ниши — посчитаем комплектацию и скажем, что встанет, а где нужен другой вариант.</p>
+            <p class="muted small">Не хотите подбирать сами? Опишите задачу словами — на консультации соберём комплектацию под ваш проём.</p>
+            <p><a class="link" href="planner.html">Собрать проём в 3D-планировщике</a></p>
+          </div>
+
+          <div>
+            <!-- ДЕМО-ДАННЫЕ: форма записи на консультацию. Отправка имитируется main.js,
+                 рабочий обработчик подключается атрибутом data-native-submit. -->
+            <form class="form form--wide" data-form="lead"
+                  data-success="Заявка принята. Перезвоним, уточним размеры и предложим варианты. Если удобнее созвониться сразу — 8-800-101-36-80."
+                  data-success-delay="6000">
+              <div class="field">
+                <label for="size-name">Имя</label>
+                <input id="size-name" name="name" type="text" autocomplete="name" required>
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field">
+                <label for="size-phone">Телефон</label>
+                <input id="size-phone" name="phone" type="tel" autocomplete="tel"
+                       data-mask="phone" data-phone-prefix="+7" required>
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field">
+                <label for="size-dims">Размеры ниши или проёма</label>
+                <input id="size-dims" name="dimensions" type="text" placeholder="Например: 2100 × 2500 × 600 мм">
+                <p class="field__hint">Необязательно. Можно прислать фото проёма с размерной лентой.</p>
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field field--check">
+                <input id="size-consent" name="consent" type="checkbox" data-consent required>
+                <label for="size-consent">Согласен на обработку персональных данных и получение ответа по заявке. <a class="link" href="privacy.html">Политика конфиденциальности</a></label>
+              </div>
+
+              <div class="form__actions">
+                <button class="btn btn--primary" type="submit" data-magnetic>Записаться на консультацию</button>
+                <p class="form__note">Перезвоним, уточним размеры и предложим варианты.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФАКТЫ О ФАБРИКЕ -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Производство</span>
+          <h2 class="h2" data-lines><span class="line"><span>Фабрика в Кузнецке</span></span></h2>
+        </div>
+        <div class="stats" data-stagger>
+          <div class="stat">
+            <p class="stat__num">1997</p>
+            <p class="stat__label">первый корпус собран в Кузнецке и с тех пор здесь же делаем всю мебель</p>
+          </div>
+          <div class="stat">
+            <p class="stat__num">3 года</p>
+            <p class="stat__label">гарантия на конструкцию и комплектующие</p>
+          </div>
+          <div class="stat">
+            <p class="stat__num">30–40 дней</p>
+            <p class="stat__label">производство позиции под заказ от утверждения спецификации</p>
+          </div>
+          <div class="stat">
+            <p class="stat__num">HOMAG · Weeke</p>
+            <p class="stat__label">раскрой и присадка; плиты Egger, фурнитура Hettich</p>
+          </div>
+        </div>
+        <p class="prose">Продукция сертифицирована: санитарно-гигиенический сертификат Госсанэпиднадзора РФ и стандарты Таможенного союза. Документы на партию передаются вместе с изделием.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <h2 class="footer__title">Каталог</h2>
+          <ul class="footer__list">
+            <li><a href="catalog.html?category=gostinye">Гостиные</a></li>
+            <li><a href="catalog.html?category=prihozhaya">Прихожие</a></li>
+            <li><a href="catalog.html?category=spalnya">Спальни</a></li>
+            <li><a href="catalog.html?category=detskie">Детские</a></li>
+            <li><a href="catalog.html?category=malye-formy">Малые формы</a></li>
+            <li><a href="catalog.html?category=shkafy-kupe">Шкафы-купе</a></li>
+            <li><a href="catalog.html?category=modulnye-kuxni">Модульные кухни</a></li>
+            <li><a href="catalog.html?category=sistemy-hraneniya">Системы хранения</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Покупателю</h2>
+          <ul class="footer__list">
+            <li><a href="planner.html">3D-планировщик</a></li>
+            <li><a href="delivery.html">Доставка и гарантия</a></li>
+            <li><a href="cases.html">Проекты</a></li>
+            <li><a href="faq.html">Вопросы</a></li>
+            <li><a href="contacts.html#consultation">Консультация</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Дилерам</h2>
+          <ul class="footer__list">
+            <li><a href="dealers.html">Условия сотрудничества</a></li>
+            <li><a href="dealers.html#materials">Материалы и прайс</a></li>
+            <li><a href="dealers.html#samples">Образцы</a></li>
+            <li><a href="dealers.html">Канал для партнёров</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Контакты</h2>
+          <ul class="footer__list">
+            <li><a href="tel:88001013680">8-800-101-36-80</a></li>
+            <li><a href="contacts.html">г. Кузнецк, Пензенская область</a></li>
+            <li><a href="contacts.html#consultation">Записаться на консультацию</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span class="footer__year" data-year></span> Мебельная фабрика «Альбина»</p>
+        <p>Сертификат Госсанэпиднадзора РФ · Стандарты Таможенного союза</p>
+        <p><a class="link link--light" href="privacy.html">Политика обработки персональных данных</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="btn btn--primary mobile-cta" href="contacts.html#consultation">Записаться на консультацию</a>
+</body>
+</html>

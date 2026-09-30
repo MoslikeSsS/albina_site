@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мебельная фабрика «Альбина» — корпусная мебель по вашим размерам · Кузнецк</title>
+<meta name="description" content="Фабрика «Альбина», г. Кузнецк Пензенской области, с 1997 года. Корпусная мебель под ваш проём: раскрой и фрезеровка на станках HOMAG и Weeke, контроль каждого этапа, сертификаты Госсанэпиднадзора и Таможенного союза. Запись на консультацию: 8 800 101-36-80.">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body class="has-header-offset">
+
+<a class="skip-link" href="#main">К содержанию</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html" aria-label="Мебельная фабрика «Альбина» — на главную">
+      <!-- Логотип набран белым: на светлой залипающей шапке нужен фильтр в тёмный. Когда появится тёмный вариант логотипа, filter можно убрать. -->
+      <img src="assets/img/logo-dark.svg" alt="Мебельная фабрика Альбина" width="128" height="58" style="width:112px;height:auto;filter:brightness(0)">
+    </a>
+
+    <nav class="nav" id="main-nav" aria-label="Основная навигация">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+        <li class="nav__item"><a class="nav__link" href="planner.html">3D-планировщик</a></li>
+        <li class="nav__item"><a class="nav__link" href="about.html">О фабрике</a></li>
+        <li class="nav__item"><a class="nav__link" href="cases.html">Проекты</a></li>
+        <li class="nav__item"><a class="nav__link" href="delivery.html">Доставка и гарантия</a></li>
+        <li class="nav__item"><a class="nav__link" href="dealers.html">Дилерам</a></li>
+        <li class="nav__item"><a class="nav__link" href="faq.html">Вопросы</a></li>
+        <li class="nav__item"><a class="btn btn--primary nav__cta" href="#consultation">Консультация</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions" style="display:flex">
+      <a class="header__phone" href="tel:+78001013680">8 800 101-36-80</a>
+      <a class="btn btn--primary" href="#consultation">Консультация</a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. ГЕРОЙ — двухколоночный первый экран: текст слева, фото цеха справа.
+       section--flush убирает вертикальные отступы .section, поэтому ритм
+       возвращается инлайном: клип по краям экрана, воздух — сверху и снизу. -->
+  <section class="section section--flush" style="padding:clamp(40px,5vw,88px) 0">
+    <div class="container hero-split">
+      <div class="hero-split__content">
+        <p class="eyebrow">Мебельная фабрика · Кузнецк · с 1997 года</p>
+
+        <h1 data-lines>
+          <span class="line"><span>Мебель, которая</span></span>
+          <span class="line"><span>встаёт по вашим</span></span>
+          <span class="line"><span>размерам</span></span>
+        </h1>
+
+        <p class="lead">Фабрика в Кузнецке: раскрой и фрезеровка на европейских станках, контроль каждого этапа изготовления, сертификаты Госсанэпиднадзора и Таможенного союза. С 1997 года.</p>
+        <p class="muted prose">Мы собираем корпусную мебель под ваш проём, а не под типовой модуль из каталога. Поэтому мебель встаёт в нишу без лишних зазоров, а проект, который вы утвердили, и мебель, которая приедет, — одно и то же.</p>
+
+        <ul class="row" style="--gap:10px">
+          <li class="tag">С 1997 года</li>
+          <li class="tag">12 категорий</li>
+          <li class="tag">Кузнецк, Пензенская область</li>
+          <li class="tag">Собственный сайт с 2007 года</li>
+        </ul>
+
+        <div class="hero-split__actions">
+          <a class="btn btn--primary btn--lg" href="#consultation" data-magnetic>Записаться на консультацию</a>
+          <a class="btn btn--ghost btn--lg" href="catalog.html" data-magnetic>Смотреть каталог</a>
+        </div>
+
+        <p class="small muted">Пришлём расчёт комплектации под размеры вашей ниши.
+          <a class="link" href="planner.html">Собрать план комнаты в 3D →</a>
+        </p>
+
+        <!-- Счётчики: JS заменяет текст при появлении, разметка отдаёт
+             текущее значение. 1997 и мелкие числа форматированием не трогаются. -->
+        <ul class="stats" style="list-style:none;padding-left:0;margin:40px 0 0;grid-template-columns:repeat(3,minmax(0,1fr))">
+          <li class="stat">
+            <span class="stat__num" data-count-to="1997">1997</span>
+            <span class="stat__label">год основания фабрики в Кузнецке</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num" data-count-to="12">12</span>
+            <span class="stat__label">категорий корпусной мебели в каталоге</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num" data-count-to="7">7</span>
+            <span class="stat__label">этапов контроля изготовления</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-split__media">
+        <img src="assets/img/hero.webp" alt="Цех мебельной фабрики «Альбина» в Кузнецке: раскрой и фрезеровка корпусных деталей" width="1200" height="1500" fetchpriority="high" data-parallax="0.1">
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ПОЧЕМУ ФАБРИКА: ПРОИЗВОДСТВО И ЦИФРЫ -->
+  <section class="section section--tint reveal" id="factory">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">О фабрике</span>
+        <h2 class="h2">За «Альбиной» стоит цех, а не склад</h2>
+        <p class="lead">Мы проектируем, раскраиваем и собираем мебель в Кузнецке. Это значит, что за каждый этап отвечает конкретный цех, а не посредник, и переделать ошибку можно на своей площадке, не везя изделие обратно.</p>
+        <p class="muted">Корпусная мебель почти всегда покупается под конкретный проём. Большинство проблем начинается там, где производитель не видел помещения: щель у стены, перекос по высоте, дверь, которая не открывается. Мы начинаем с замера и ведём изделие до монтажа своими силами.</p>
+      </div>
+
+      <div class="features" data-stagger>
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 20.5h18"/><path d="M5 20.5V9l4.5 3.2V9l4.5 3.2V9L18.5 12.2v8.3"/><path d="M9.5 20.5v-3.5h5v3.5"/><path d="M14.5 3.5v4"/></svg></span>
+          <h3 class="feature__title">Собственное производство</h3>
+          <p class="feature__text">Проектирование, раскрой, фрезеровка, присадка и сборка выполняются на своей площадке в Кузнецке. Между этапами нет посредника.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 8.5V5.5a1 1 0 0 1 1-1h2.5M20 8.5V5.5a1 1 0 0 0-1-1h-2.5M4 15.5v3a1 1 0 0 0 1 1h2.5M20 15.5v3a1 1 0 0 1-1 1h-2.5"/><path d="m8.8 12.2 2.4 2.4 4.4-4.8"/></svg></span>
+          <h3 class="feature__title">Контроль каждого этапа</h3>
+          <p class="feature__text">От раскроя до упаковки. Деталь, прошедшая один этап, не уходит на следующий непроверенной.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M14 3v4h4"/><path d="M9 13.5h6M9 17h4"/></svg></span>
+          <h3 class="feature__title">Документы на каждую партию</h3>
+          <p class="feature__text">Санитарно-гигиенический сертификат Госсанэпиднадзора РФ и сертификация по стандартам Таможенного союза. Передаются вместе с изделием.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 20.5V19a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1.5"/><circle cx="9.5" cy="7" r="3.2"/><path d="M21 20.5V19a4 4 0 0 0-3-3.87"/><path d="M16.6 4.1a3.2 3.2 0 0 1 0 6.2"/></svg></span>
+          <h3 class="feature__title">Штат специалистов</h3>
+          <p class="feature__text">Замер, проектирование и контроль на производстве ведут инженеры и столяры, работающие в цехе, а не операторы на телефоне.</p>
+        </article>
+      </div>
+
+      <hr class="divider">
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat__num" data-count-to="1997">1997</span>
+          <span class="stat__label">год основания фабрики в Кузнецке Пензенской области</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count-to="12">12</span>
+          <span class="stat__label">категорий корпусной мебели в каталоге</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count-to="7">7</span>
+          <span class="stat__label">этапов контроля: раскрой, кромление, присадка, фрезеровка, сборка, контроль, упаковка</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count-to="2007">2007</span>
+          <span class="stat__label">собственный сайт фабрики работает без перерывов</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 12 КАТЕГОРИЙ — bento-сетка 12 колонок: одна крупная, две средние,
+       девять базовых. Подпись .bento__meta обязательна у каждой плитки. -->
+  <section class="section reveal" id="catalog">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Каталог</span>
+        <h2 class="h2">12 категорий, между которыми можно выбирать</h2>
+        <p class="lead">Внутри каждой категории — модели и модификации, которые собираются под ваш проём.</p>
+      </div>
+
+      <div class="bento" data-stagger>
+        <a class="bento--lg" href="catalog.html#gostinye">
+          <div class="bento__media"><img src="assets/img/cat-gostinye.webp" alt="Гостиные — корпусная мебель для гостиной, собранная под проём" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Гостиные</h3>
+            <p class="bento__meta">Гостиная «Ника» и другие корпусные решения для главной комнаты.</p>
+          </div>
+        </a>
+
+        <a class="bento--md" href="catalog.html#spalni">
+          <div class="bento__media"><img src="assets/img/cat-spalnya.webp" alt="Спальни — спальни и кровати из массива и ЛДСП" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Спальни</h3>
+            <p class="bento__meta">Шкафы и системы хранения для спальни.</p>
+          </div>
+        </a>
+
+        <!-- ДЕМО-ДАННЫЕ: состав детской категории (рабочее место, хранение, безопасные решения) — сверить с файлом 02-КАТАЛОГ. -->
+        <a class="bento--md" href="catalog.html#detskie">
+          <div class="bento__media"><img src="assets/img/cat-detskie.webp" alt="Детские — детская мебель для детской комнаты" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Детские</h3>
+            <p class="bento__meta">Рабочее место, хранение и безопасные решения для ребёнка.</p>
+          </div>
+        </a>
+
+        <a href="catalog.html#prihozhaya">
+          <div class="bento__media"><img src="assets/img/cat-prihozhaya.webp" alt="Прихожие — шкафы-обувные и вешалки, собранные под узкий проём" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Прихожие</h3>
+            <p class="bento__meta">Шкафы-купе, тумбы и малые формы под узкий проём.</p>
+          </div>
+        </a>
+
+        <!-- ДЕМО-ДАННЫЕ: состав категории «Кабинет» — сверить с файлом 02-КАТАЛОГ. -->
+        <a href="catalog.html#kabinet">
+          <div class="bento__media"><img src="assets/img/cat-kabinet.webp" alt="Кабинет — кабинетная мебель и рабочие столы" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Кабинет</h3>
+            <p class="bento__meta">Рабочие столы, тумбы и системы хранения.</p>
+          </div>
+        </a>
+
+        <!-- ДЕМО-ДАННЫЕ: диваны в каталоге фабрики — производятся на своей площадке или закупаются у поставщика, нужно подтвердить. -->
+        <a href="catalog.html#divany">
+          <div class="bento__media"><img src="assets/img/cat-divany.webp" alt="Диваны — диваны и мягкая мебель для дома" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Диваны</h3>
+            <p class="bento__meta">Диваны и мягкие элементы в корпусных интерьерах.</p>
+          </div>
+        </a>
+
+        <a href="catalog.html#shkafy-kupe">
+          <div class="bento__media"><img src="assets/img/cat-shkafy-kupe.webp" alt="Шкафы-купе на заказ по индивидуальным размерам проёма" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Шкафы-купе</h3>
+            <p class="bento__meta">«Бруно», «Заря», «Фаворит» и другие шкафы-купе под проём.</p>
+          </div>
+        </a>
+
+        <a href="catalog.html#malye-formy">
+          <div class="bento__media"><img src="assets/img/cat-malye-formy.webp" alt="Малые формы — комоды, тумбы и малые формы мебели" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Малые формы</h3>
+            <p class="bento__meta">Комоды, открытые стеллажи и тумбы.</p>
+          </div>
+        </a>
+
+        <a href="catalog.html#gotovye-kuxni">
+          <div class="bento__media"><img src="assets/img/cat-gotovye-kuxni.webp" alt="Готовые решения кухонь — кухни из готовых модулей" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Готовые решения кухонь</h3>
+            <p class="bento__meta">Комплекты, собранные в единый проект.</p>
+          </div>
+        </a>
+
+        <a href="catalog.html#shkafy">
+          <div class="bento__media"><img src="assets/img/cat-shkafy.webp" alt="Шкафы — шкафы и корпусные системы хранения" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Шкафы</h3>
+            <p class="bento__meta">Корпусные шкафы под задачу и проём.</p>
+          </div>
+        </a>
+
+        <a href="catalog.html#modulnye-kuxni">
+          <div class="bento__media"><img src="assets/img/cat-modulnye-kuxni.webp" alt="Модульные кухни — модульные кухни из отдельных модулей" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Модульные кухни</h3>
+            <p class="bento__meta">Модульная система «Ева» и другие модульные ряды.</p>
+          </div>
+        </a>
+
+        <a href="catalog.html#sistemy-hraneniya">
+          <div class="bento__media"><img src="assets/img/cat-sistemy-hraneniya.webp" alt="Системы хранения — системы хранения для квартиры и дома" width="400" height="300" loading="lazy"></div>
+          <div class="bento__body">
+            <h3 class="bento__title">Системы хранения</h3>
+            <p class="bento__meta">Система хранения «Бланка» и комплексные решения.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="row row--between reveal" style="margin-top:40px">
+        <a class="btn btn--ghost" href="catalog.html">Открыть каталог</a>
+        <p class="small muted">12 категорий, фильтры по размеру, цвету и коллекции.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ИЗБРАННЫЕ КОЛЛЕКЦИИ — горизонтальная лента со снапом -->
+  <section class="section section--tint reveal" id="collections">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Избранное</span>
+        <h2 class="h2">Коллекции, которые стоит посмотреть вживую</h2>
+        <p class="lead">Одна фабрика делает и комод, и модульную систему — но в материале и конструкции у них разные решения. Ниже — позиции, где это видно лучше всего.</p>
+      </div>
+
+      <div class="rail" data-stagger>
+        <a class="card" href="catalog.html#modulnye-kuxni">
+          <span class="card__media"><img src="assets/img/coll-eva.webp" alt="Спальня Ева Кашемир из коллекции фабрики" width="400" height="300" loading="lazy"></span>
+          <span class="card__body">
+            <span class="tag">Модульная система</span>
+            <span class="card__title">Коллекция «Ева Кашемир»</span>
+            <span class="card__meta">Модульный ряд, который собирается под задачу и масштаб помещения: состав модулей, их расположение и высоту можно менять.</span>
+            <span class="card__actions"><span class="link">Смотреть модель →</span></span>
+          </span>
+        </a>
+
+        <a class="card" href="catalog.html#gostinye">
+          <span class="card__media"><img src="assets/img/coll-nika.webp" alt="Гостиная Ника из коллекции фабрики" width="400" height="300" loading="lazy"></span>
+          <span class="card__body">
+            <span class="tag">Гостиная</span>
+            <span class="card__title">Коллекция «Ника»</span>
+            <span class="card__meta">Корпусные решения для главной комнаты, которые собираются под проём и под способ хранения, а не под одну схему.</span>
+            <span class="card__actions"><span class="link">Смотреть модель →</span></span>
+          </span>
+        </a>
+
+        <a class="card" href="catalog.html#detskie">
+          <span class="card__media"><img src="assets/img/coll-teodora.webp" alt="Детская Теодора из коллекции фабрики" width="400" height="300" loading="lazy"></span>
+          <span class="card__body">
+            <span class="tag">Детская</span>
+            <span class="card__title">Коллекция «Теодора»</span>
+            <span class="card__meta">Рабочее место и хранение для детской комнаты: безопасные скрытые крепления, закруглённые кромки, регулируемая высота стола.</span>
+            <span class="card__actions"><span class="link">Смотреть модель →</span></span>
+          </span>
+        </a>
+      </div>
+
+      <!-- ДЕМО-ДАННЫЕ: семейство комодов «Мадера» — 7 модификаций (К3М, К4М, К6М, К10М, К700, 1200,8 и 1384). Взять из карточки товара 03-СТРАНИЦА-ТОВАРА. -->
+      <div class="note reveal" style="margin-top:40px">
+        <p>Семейство комодов «Мадера» — одна конструкция в семи габаритах: К3М, К4М, К6М, К10М, К700, 1200,8 и 1384. Одна и та же фурнитура и отделка, разные ниши.</p>
+        <p>Смотрите на площадке в Кузнецке или приезжайте на консультацию — образцы материалов и фурнитуры показываем вживую.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. КАК МЫ РАБОТАЕМ -->
+  <section class="section reveal" id="process">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Процесс</span>
+        <h2 class="h2">От замера до монтажа — пять шагов</h2>
+        <p class="lead">Каждый этап заканчивается результатом, который можно посмотреть и проверить. Скрытых шагов между ними нет.</p>
+      </div>
+
+      <div data-stagger>
+        <ol class="steps">
+          <li class="steps__item">
+            <div class="stack" style="--gap:10px">
+              <h3 class="steps__title">Консультация и замер</h3>
+              <p class="steps__text">Обсуждаем задачу, снимаем размеры ниш и проёмов, отмечаем то, что мешает: розетки, плинтус, вентиляцию, наклон стен.</p>
+              <!-- ДЕМО-ДАННЫЕ: формат работы — выезд замерщика в Кузнецке и Пензенской области, в другие регионы — работа по фото и замерам клиента. Подтвердить с производством. -->
+              <p class="small muted">Что получает клиент: план помещения с размерами.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="stack" style="--gap:10px">
+              <h3 class="steps__title">Проект и 3D</h3>
+              <p class="steps__text">Собираем проект в 3D-планировщике: вы видите комнату с мебелью до того, как примете решение.</p>
+              <p class="small muted">Что получает клиент: 3D-визуализация и спецификация.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="stack" style="--gap:10px">
+              <h3 class="steps__title">Согласование и договор</h3>
+              <p class="steps__text">Фиксируем состав комплекта, материалы, фурнитуру и срок изготовления. Согласие в переписке равнозначно подписи.</p>
+              <p class="small muted">Что получает клиент: договор с зафиксированной спецификацией.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="stack" style="--gap:10px">
+              <h3 class="steps__title">Производство</h3>
+              <p class="steps__text">Раскрой, кромление, присадка, фрезеровка, сборка, контроль, упаковка — на своей площадке в Кузнецке.</p>
+              <p class="small muted">Что получает клиент: готовое изделие и документы на партию.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <div class="stack" style="--gap:10px">
+              <h3 class="steps__title">Доставка и монтаж</h3>
+              <p class="steps__text">Привозим, поднимаем, собираем, регулируем створки и механизмы, убираем упаковку.</p>
+              <p class="small muted">Что получает клиент: мебель, установленная в проём.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="stack reveal" style="margin-top:48px;--gap:12px">
+        <div class="row" style="--gap:12px">
+          <a class="btn btn--primary" href="#consultation">Записаться на консультацию</a>
+          <a class="link" href="delivery.html">Как считается стоимость доставки и монтажа</a>
+        </div>
+        <p class="small muted">Первый разговор ничего не стоит и ни к чему не обязывает.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОБОРУДОВАНИЕ — бегущая строка между шагом «производство»
+       и блоком контроля качества. Второй набор марок клонирует main.js
+       сам, поэтому в разметке он ровно один. -->
+  <section class="section section--flush" style="padding:clamp(40px,5vw,72px) 0">
+    <div class="container">
+      <p class="eyebrow u-center">Оборудование и материалы</p>
+      <p class="lead u-center u-measure reveal">Фабрика работает на европейском оборудовании и плитных материалах перечисленных марок: корпуса не разбалтываются, а оттенки фасадов совпадают между изделиями одной партии.</p>
+
+      <div data-marquee data-speed="42">
+        <div class="marquee__track">
+          <span class="eyebrow">HOMAG</span>
+          <span class="eyebrow">Weeke</span>
+          <span class="eyebrow">Egger</span>
+          <span class="eyebrow">Hettich</span>
+          <span class="eyebrow">Kronospan</span>
+          <span class="eyebrow">Swiss Krono</span>
+          <span class="eyebrow">Kastamonu</span>
+          <span class="eyebrow">BOYARD</span>
+          <span class="eyebrow">Blanco</span>
+          <span class="eyebrow">Leitz</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ПРОИЗВОДСТВО И КОНТРОЛЬ КАЧЕСТВА -->
+  <section class="section section--tint reveal" id="production">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Производство</span>
+        <h2 class="h2">Станки, на которых это делается</h2>
+        <p class="lead">Мы не перепродаём чужое производство. Оборудование, материалы и фурнитура — рабочий контур фабрики в Кузнецке.</p>
+      </div>
+
+      <div class="features" data-stagger>
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M5.6 18.4l1.6-1.6M16.8 7.2l1.6-1.6"/></svg></span>
+          <h3 class="feature__title">Станки HOMAG</h3>
+          <p class="feature__text">Европейский станочный парк для раскроя и обработки плитных материалов.</p>
+          <!-- ДЕМО-ДАННЫЕ: точные модели станков HOMAG на площадке — запросить у производства перед публикацией. -->
+          <p class="small muted">Модели и год ввода уточняются у производства.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 21 7.8v8.4L12 21 3 16.2V7.8z"/><path d="M3 7.8 12 12.6l9-4.8M12 12.6V21"/></svg></span>
+          <h3 class="feature__title">Станки Weeke</h3>
+          <p class="feature__text">Европейское оборудование для обработки деталей корпусной мебели.</p>
+          <!-- ДЕМО-ДАННЫЕ: точные модели станков Weeke на площадке — запросить у производства перед публикацией. -->
+          <p class="small muted">Модели и год ввода уточняются у производства.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.5 21 8l-9 4.5L3 8z"/><path d="m3 12.5 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/></svg></span>
+          <h3 class="feature__title">Материалы и фурнитура</h3>
+          <p class="feature__text">Egger, Kronospan, Swiss Krono, Kastamonu, BOYARD — плитные материалы и кромка. Hettich, Brandt, Leitz, Blanco — направляющие, петли, подъёмники и мойки.</p>
+        </article>
+      </div>
+
+      <div class="stack" style="margin-top:48px;--gap:24px">
+        <h3 class="h3">Контроль по этапам</h3>
+        <ul class="row" style="--gap:10px">
+          <li class="tag">Раскрой</li>
+          <li class="tag">Кромление</li>
+          <li class="tag">Присадка</li>
+          <li class="tag">Фрезеровка</li>
+          <li class="tag">Сборка</li>
+          <li class="tag">Контроль</li>
+          <li class="tag">Упаковка</li>
+        </ul>
+        <p class="muted u-measure">Каждая операция заканчивается проверкой до того, как деталь уйдёт на следующую. Ошибка, найденная на этапе кромления, не превращается в брак в готовом шкафу.</p>
+      </div>
+
+      <div class="grid" style="margin-top:56px" data-stagger>
+        <div class="col-6">
+          <div class="card">
+            <span class="card__media"><img src="assets/img/about-1.webp" alt="Собственное производство корпусной мебели на фабрике" width="640" height="480" loading="lazy"></span>
+            <span class="card__body">
+              <span class="card__title">Цех в Кузнецке</span>
+              <span class="card__meta">Раскрой, присадка, фрезеровка и сборка проходят на одной площадке — детали между цехами не возвращаются транспортной компании.</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <span class="card__media"><img src="assets/img/about-2.webp" alt="Интерьер, собранный из корпусной мебели фабрики" width="640" height="480" loading="lazy"></span>
+            <span class="card__body">
+              <span class="card__title">Изделие в интерьере</span>
+              <span class="card__meta">Каждое изделие проходит приёмку по месту: зазоры, ход створок, натяжение механизмов проверяются до отправки.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="note" style="margin-top:40px">
+        <p><strong>Документы:</strong> санитарно-гигиенический сертификат Госсанэпиднадзора РФ и сертификация по стандартам Таможенного союза. Документы передаются вместе с изделием и остаются доступными для заказчика.</p>
+        <!-- ДЕМО-ДАННЫЕ: соответствие брендов материалов и фурнитуры конкретным узлам (ЛДСП/панели, кромка, направляющие, петли, доводчики) — уточнить у технолога перед публикацией. -->
+        <p>Конкретные позиции материалов и фурнитуры для вашей модели фиксируются в спецификации к договору.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. 3D-ПЛАНИРОВЩИК -->
+  <section class="section reveal" id="planner">
+    <div class="container">
+      <div class="grid">
+        <div class="col-6 stack">
+          <div class="section__head" style="margin-bottom:0">
+            <span class="eyebrow">Дизайн-сервис</span>
+            <h2 class="h2">Посмотрите свою комнату до того, как примете решение</h2>
+            <p class="lead">3D-планировщик на сайте позволяет поставить мебель «Альбина» в ваше помещение и посмотреть, как она встанет, до замера и до договора.</p>
+          </div>
+          <p class="muted">Планировщик решает задачу, которую фотографии каталога не решают: понять, влезает ли выбранная композиция в ваши размеры и как она смотрится именно в вашем свете и объёме. Проект из планировщика становится основой для замера и для спецификации — это не отдельная картинка, а рабочий документ.</p>
+
+          <div class="features" style="grid-template-columns:1fr;gap:28px" data-stagger>
+            <article class="feature">
+              <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="8.5" width="19" height="7" rx="1"/><path d="M7 8.5v3M11 8.5v2M15 8.5v3M19 8.5v2"/></svg></span>
+              <h3 class="feature__title">Проверка размеров до замера</h3>
+              <p class="feature__text">Видно, где корпус не встанет в нишу и где не откроется дверь.</p>
+            </article>
+            <article class="feature">
+              <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/></svg></span>
+              <h3 class="feature__title">Подбор композиции</h3>
+              <p class="feature__text">Состав модулей, их расположение и высоту можно менять и смотреть результат сразу.</p>
+            </article>
+            <article class="feature">
+              <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 20.5H17"/><path d="M7.5 17V4.5a1 1 0 0 1 1-1h4.2L16 6.8V10"/><path d="m11.5 17.5 8.5-8.5"/><path d="M16.5 9H20v3.5"/></svg></span>
+              <h3 class="feature__title">Передача в проект</h3>
+              <p class="feature__text">То, что собрали в 3D, идёт в работу как основа спецификации.</p>
+            </article>
+          </div>
+
+          <div class="row" style="--gap:12px">
+            <a class="btn btn--primary" href="planner.html">Открыть 3D-планировщик</a>
+            <a class="btn btn--ghost" href="#consultation">Записаться на консультацию</a>
+          </div>
+          <!-- ДЕМО-ДАННЫЕ: планировщик работает в браузере без установки; поддерживаемые браузеры — Chrome, Edge, Яндекс.Браузер на ПК. Подтвердить у разработчика. -->
+          <p class="small muted">Работает в браузере, без установки. Мебель в вашей комнате, вид из двух точек.</p>
+        </div>
+
+        <div class="col-6 stack">
+          <div class="card">
+            <span class="card__media"><img src="assets/img/catalog-og.webp" alt="Каталог корпусной мебели фабрики «Альбина» — база для проекта в планировщике" width="640" height="480" loading="lazy"></span>
+            <span class="card__body">
+              <span class="card__title">Что делает планировщик</span>
+              <span class="card__meta">Загружаете план помещения или вводите размеры комнаты, расставляете корпуса из каталога и смотрите результат в объёме. Сохранить проект и переслать его на консультацию можно прямо из планировщика.</span>
+            </span>
+          </div>
+          <div class="note">
+            <p>Если браузер не поддерживает 3D, планировщик не показывает ошибку: пришлите фото комнаты с размерами — визуализацию соберём на консультации.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. ДИЛЕРАМ — отдельная тёмная секция B2B со своей формой -->
+  <section class="section section--dark reveal" id="dealers">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">B2B</span>
+        <h2 class="h2">Поставщикам и дилерам</h2>
+        <p class="lead">Мы работаем с дилерами, салонами и проектными организациями с 1997 года. Партия к партии — одна и та же спецификация, один и тот же стандарт качества.</p>
+      </div>
+
+      <div class="features" data-stagger>
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="9.5" r="5.5"/><path d="m8.4 14.2-1.4 6.3 5-2.4 5 2.4-1.4-6.3"/></svg></span>
+          <h3 class="feature__title">Официальный дилерский статус</h3>
+          <p class="feature__text">Право использования логотипа и рекламных материалов, условия работы закреплены договором.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg></span>
+          <h3 class="feature__title">Условия по объёму</h3>
+          <p class="feature__text">Индивидуальные условия в зависимости от объёма закупки и срока сотрудничества.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4.5v15M6.5 19.5h11M4.5 9.5h15"/><path d="M4.5 9.5 2 15.2a3 3 0 0 0 5 0z"/><path d="m19.5 9.5-2.5 5.7a3 3 0 0 0 5 0z"/></svg></span>
+          <h3 class="feature__title">Сбалансированный ассортимент</h3>
+          <p class="feature__text">12 категорий и модели, которые не каннибализируют друг друга в розничной витрине партнёра.</p>
+        </article>
+
+        <!-- ДЕМО-ДАННЫЕ: в «гибкие условия» входит отсрочка платежа до 14 дней, сборка заказа под график партнёра и комбинирование категорий в одной партии. Подтвердить с финансовым отделом. -->
+        <article class="feature">
+          <span class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2.1"/></svg></span>
+          <h3 class="feature__title">Гибкие условия</h3>
+          <p class="feature__text">Отсрочка платежа до 14 дней, сборка партии под график партнёра, объединение категорий в один заказ.</p>
+        </article>
+      </div>
+
+      <div class="grid" style="margin-top:56px">
+        <div class="col-6 stack">
+          <div class="stack" style="--gap:16px">
+            <h3 class="h3">Что получает партнёр</h3>
+            <p class="muted">Дилерам мы передаём то, что нужно для продажи: материалы, каталог, прайс и образцы. По Telegram-каналу для партнёров идёт информация о поступлениях и изменениях ассортимента.</p>
+            <p class="muted">Заявки на партнёрство обрабатывает отдел продаж фабрики — на Кузнецк не в договоре, а в схеме работы с салоном.</p>
+            <div class="row" style="--gap:12px">
+              <a class="btn btn--primary" href="dealers.html">Все условия сотрудничества</a>
+              <a class="link link--light" href="catalog.html">Смотреть, что производим →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <form class="form" data-form="lead" method="post" action="/dealers.html#request"
+                data-success="Заявка отправлена. Мы пришлём прайс и условия в течение рабочего дня." data-success-delay="5000">
+            <h3 class="h3">Запросить оптовые условия</h3>
+
+            <div class="field">
+              <label for="dealer-company">Название компании</label>
+              <input id="dealer-company" name="company" type="text" autocomplete="organization" placeholder="ООО «Мебель Плюс»" required>
+            </div>
+
+            <div class="field">
+              <label for="dealer-contact">Телефон или e-mail</label>
+              <input id="dealer-contact" name="contact" type="text" autocomplete="email" placeholder="+7 ___ ___-__-__ или name@company.ru" required>
+              <p class="field__hint">Ответим по тому каналу, который вы укажете.</p>
+            </div>
+
+            <div class="field">
+              <label for="dealer-region">Регион и объём закупки</label>
+              <input id="dealer-region" name="region" type="text" placeholder="Например: Пензенская область, 20 шкафов в квартал">
+            </div>
+
+            <div class="field field--check">
+              <input id="dealer-consent" name="consent" type="checkbox" data-consent required>
+              <label for="dealer-consent">Согласен на обработку персональных данных. <a class="link link--light" href="privacy.html">Политика конфиденциальности</a></label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit" data-magnetic>Запросить оптовые условия</button>
+              <p class="form__note">Ответим и пришлём прайс в течение рабочего дня.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. ОТЗЫВЫ -->
+  <section class="section reveal" id="reviews">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Отзывы</span>
+        <h2 class="h2">Что говорят клиенты</h2>
+        <p class="lead">Три отзыва из последних заказов. Без оценок в звёздах: объективного метода рейтинга у нас нет, поэтому мы его не рисуем.</p>
+      </div>
+
+      <div class="cards" data-stagger>
+        <!-- ДЕМО-ДАННЫЕ: отзывы демонстрационные, имена и города обезличены. Перед публикацией заменить на реальные отзывы из файла 06-КЕЙСЫ-И-ОТЗЫВЫ с согласием клиентов. -->
+        <article class="card">
+          <span class="card__body">
+            <span class="tag">Шкафы-купе</span>
+            <span class="card__title">Клиент из Кузнецка</span>
+            <span class="card__meta">Заказывал шкаф-купе в нишу с неровной стеной. Замерщик снял размеры по высоте в трёх точках, корпус подогнали под перепад — щелей у стены нет. Сборку делали в тот же день, что привезли.</span>
+          </span>
+        </article>
+
+        <!-- ДЕМО-ДАННЫЕ: демонстрационный отзыв. Заменить на реальный отзыв из файла 06-КЕЙСЫ-И-ОТЗЫВЫ. -->
+        <article class="card">
+          <span class="card__body">
+            <span class="tag">Прихожие</span>
+            <span class="card__title">Заказ из Пензы</span>
+            <span class="card__meta">Проект собрали в 3D-планировщике, по нему же посчитали смету — правок по ходу почти не понадобилось. Изготовление заняло дольше, чем планировали из-за загрузки цеха, о сдвиге предупредили заранее.</span>
+          </span>
+        </article>
+
+        <!-- ДЕМО-ДАННЫЕ: демонстрационный отзыв. Заменить на реальный отзыв из файла 06-КЕЙСЫ-И-ОТЗЫВЫ. -->
+        <article class="card">
+          <span class="card__body">
+            <span class="tag">Модульные кухни</span>
+            <span class="card__title">Заказ из Заречного</span>
+            <span class="card__meta">Брали модульный ряд «Ева» под свою кухню: переставили мойку, поменяли высоту рабочей поверхности. Фурнитура Hettich ходит мягко, за полтора года не отрегулировал ни разу.</span>
+          </span>
+        </article>
+      </div>
+
+      <div class="note" style="margin-top:40px">
+        <p>Отзывов на сайте пока немного — три текста, без оценок в звёздах. Посмотреть изделия вживую можно в 3D-планировщике и на площадке в Кузнецке.</p>
+      </div>
+
+      <div class="row" style="margin-top:32px;--gap:12px">
+        <a class="btn btn--primary" href="#consultation">Записаться на консультацию</a>
+        <a class="btn btn--ghost" href="cases.html">Посмотреть проекты</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ -->
+  <section class="section section--tint reveal" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="h2">Частые вопросы</h2>
+      </div>
+
+      <div class="accordion reveal">
+        <details>
+          <summary>Мебель делают под мои размеры или продают готовой?</summary>
+          <div class="accordion__body">
+            <p>Корпусная мебель у нас собирается под проём. Ширина, высота и глубина берутся из вашего помещения, а не из размеров карточки товара. Карточка показывает базовую конфигурацию — она меняется под вашу нишу.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Сколько ждать изготовление?</summary>
+          <div class="accordion__body">
+            <!-- ДЕМО-ДАННЫЕ: типовой срок изготовления 30–40 дней. Срок меняется при загрузке производства и составе заказа; точная дата фиксируется в договоре. Заменить на реальные данные производства. -->
+            <p>Обычно изготовление занимает 30–40 дней с момента подписания спецификации. Срок зависит от состава заказа и загрузки производства: если в партию попадает позиция с отдельным циклом обработки, срок сдвигается. Точную дату фиксируем в договоре до начала раскроя.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Сколько это стоит?</summary>
+          <div class="accordion__body">
+            <!-- ДЕМО-ДАННЫЕ: вилка цен 8&nbsp;900–68&nbsp;000 ₽ (малые формы и тумбы — от 8&nbsp;900 ₽, шкаф-купе — от 24&nbsp;000 ₽, модульная кухня — до 68&nbsp;000 ₽). Взять актуальные цены из прайса перед публикацией. -->
+            <p>Цена зависит от состава комплекта, материалов и фурнитуры, а не от площади помещения. Ориентир по корпусной мебели фабрики: малые формы и тумбы — от 8&nbsp;900&nbsp;₽, шкаф-купе — от 24&nbsp;000&nbsp;₽, модульная кухня — до 68&nbsp;000&nbsp;₽. Точная цена считается по вашей нише и фиксируется в спецификации; итоговая сумма в смете не меняется после начала раскроя.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Можно ли посмотреть, как это встанет в мою комнату?</summary>
+          <div class="accordion__body">
+            <p>Да. В <a class="link" href="planner.html">3D-планировщике</a> можно поставить мебель в ваше помещение и посмотреть композицию до замера. Проект из планировщика идёт в основу спецификации.</p>
+          </div>
+        </details>
+
+        <!-- ДЕМО-ДАННЫЕ: гарантия 3 года на изделие и фурнитуру; состав комплекта поставки и доставка по срокам — сверить с отделом сервиса. -->
+        <details>
+          <summary>Что входит в комплект поставки и что с гарантией?</summary>
+          <div class="accordion__body">
+            <p>В комплект входит изделие, фурнитура, упаковка и документы на партию. Сборка и монтаж — отдельной услугой, её можно добавить при заказе или выполнить самостоятельно по инструкции.</p>
+            <p>Гарантия на изделие и фурнитуру — 3 года с даты подписания акта приёмки. Гарантия не распространяется на механизмы, которые клиент регулировал самостоятельно, и на повреждения после нарушения правил эксплуатации.</p>
+            <p>По Кузнецку и Пензенской области возим своим транспортом за 2–4 дня, по России — 5–12 дней в зависимости от расстояния и загрузки.</p>
+          </div>
+        </details>
+      </div>
+
+      <p class="row" style="margin-top:32px">
+        <span class="small muted">Остальные вопросы — в разделе FAQ:</span>
+        <a class="link" href="faq.html">Все вопросы и ответы</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 11. БАННЕР-ПРИЗЫВ -->
+  <section class="banner reveal">
+    <div class="container banner__inner">
+      <div class="banner__text">
+        <h2 class="h2">Приезжаем, замеряем, считаем</h2>
+        <p class="lead">Оставьте размеры ниши или просто телефон — вернёмся с комплектацией и пониманием, что нужно вашей комнате.</p>
+      </div>
+      <div class="banner__actions">
+        <a class="btn btn--primary btn--lg" href="#consultation">Записаться на консультацию</a>
+        <a class="btn btn--light btn--lg" href="tel:+78001013680">8 800 101-36-80</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. ФОРМА КОНСУЛЬТАЦИИ -->
+  <section class="section reveal" id="consultation">
+    <div class="container">
+      <div class="grid">
+        <div class="col-5 stack">
+          <div class="section__head" style="margin-bottom:0">
+            <span class="eyebrow">Запись</span>
+            <h2 class="h2">Приезжаем, замеряем, считаем</h2>
+            <p class="lead">Оставьте размеры ниши или просто телефон — вернёмся с комплектацией и пониманием, что нужно вашей комнате.</p>
+          </div>
+
+          <div class="stack" style="--gap:8px">
+            <p class="small muted">Адрес производства и салона</p>
+            <p>Пензенская обл., г. Кузнецк,<br>ул. Пензенская, 130</p>
+          </div>
+
+          <div class="stack" style="--gap:8px">
+            <p class="small muted">Телефон</p>
+            <p><a class="link" href="tel:+78001013680">8 800 101-36-80</a></p>
+          </div>
+
+          <div class="stack" style="--gap:8px">
+            <p class="small muted">Режим работы</p>
+            <!-- ДЕМО-ДАННЫЕ: график работы пн–сб 9:00–19:00, в воскресенье — по предварительной записи. Подтвердить у администратора производства. -->
+            <p>Понедельник — суббота, 9:00–19:00.<br>В воскресенье — по предварительной записи.</p>
+          </div>
+
+          <div class="note">
+            <!-- ДЕМО-ДАННЫЕ: срок ответа по заявке — в течение рабочего дня; доставка по Пензенской обл. 2–4 дня, по РФ 5–12 дней. Подтвердить у отдела продаж. -->
+            <p>По Кузнецку и Пензенской области возим своим транспортом за 2–4 дня, по России — 5–12 дней. Срок изготовления — 30–40 дней, точная дата в договоре.</p>
+          </div>
+
+          <p class="small muted">Подробности — на странице <a class="link" href="contacts.html">контактов</a>. Для партнёров — <a class="link" href="dealers.html">условия дилерской работы</a>.</p>
+        </div>
+
+        <div class="col-7">
+          <form class="form form--wide" data-form="lead" method="post" action="/contacts.html#consultation"
+                data-success="Заявка отправлена. Мы перезвоним в течение рабочего дня." data-success-delay="5000">
+            <div class="field">
+              <label for="consult-name">Имя</label>
+              <input id="consult-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required>
+              <p class="field__hint">Как к вам обращаться</p>
+            </div>
+
+            <div class="field">
+              <label for="consult-phone">Телефон</label>
+              <input id="consult-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"
+                     data-mask="phone" data-phone-prefix="+7" placeholder="+7 (___) ___-__-__" required>
+              <p class="field__hint">Номер, по которому удобно позвонить</p>
+            </div>
+
+            <div class="field">
+              <label for="consult-task">Что хотите изготовить</label>
+              <select id="consult-task" name="task" required>
+                <option value="" selected>Выберите вариант</option>
+                <option value="gostinaya">Гостиная</option>
+                <option value="spalnya">Спальня</option>
+                <option value="detskaya">Детская</option>
+                <option value="prihozhaya">Прихожая</option>
+                <option value="kabinet">Кабинет</option>
+                <option value="kuhnya">Кухня</option>
+                <option value="shkafy-kupe">Шкафы-купе</option>
+                <option value="sistemy-hraneniya">Системы хранения</option>
+              </select>
+              <p class="field__hint">Не нашли нужное — опишите задачу в комментарии, разберём вместе.</p>
+            </div>
+
+            <div class="field">
+              <label for="consult-comment">Комментарий</label>
+              <textarea id="consult-comment" name="comment" rows="5" placeholder="Что важно: размеры ниши, цвет, количество ящиков, розетки, плинтус, сроки"></textarea>
+              <p class="field__hint">Например: ширина 2100, высота 2500, глубина 600 мм</p>
+            </div>
+
+            <div class="field field--check">
+              <input id="consult-consent" name="consent" type="checkbox" data-consent required>
+              <label for="consult-consent">Согласен на обработку персональных данных и получение ответа по заявке. <a class="link" href="privacy.html">Политика конфиденциальности</a></label>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--primary btn--lg" type="submit" data-magnetic>Записаться на консультацию</button>
+              <p class="form__note">Мы перезвоним, уточним детали и пришлём расчёт комплектации.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row row--between" style="padding-bottom:40px;border-bottom:1px solid rgba(245,241,233,.16)">
+      <a class="logo" href="index.html">
+        <img src="assets/img/logo-dark.svg" alt="Мебельная фабрика Альбина" width="128" height="58" style="width:128px;height:auto">
+      </a>
+      <div class="stack" style="--gap:4px">
+        <p class="small muted">Мебельная фабрика · Кузнецк, Пензенская область</p>
+        <p><a class="link link--light" href="tel:+78001013680">8 800 101-36-80</a></p>
+      </div>
+    </div>
+
+    <div class="footer__inner" style="margin-top:48px">
+      <div class="footer__col">
+        <p class="footer__title">Каталог</p>
+        <ul class="footer__list">
+          <li><a href="catalog.html#gostinye">Гостиные</a></li>
+          <li><a href="catalog.html#spalni">Спальни</a></li>
+          <li><a href="catalog.html#detskie">Детские</a></li>
+          <li><a href="catalog.html#prihozhaya">Прихожие</a></li>
+          <li><a href="catalog.html#shkafy-kupe">Шкафы-купе</a></li>
+          <li><a href="catalog.html#sistemy-hraneniya">Системы хранения</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">Покупателю</p>
+        <ul class="footer__list">
+          <li><a href="delivery.html">Доставка и гарантия</a></li>
+          <li><a href="#process">Как мы работаем</a></li>
+          <li><a href="planner.html">3D-планировщик</a></li>
+          <li><a href="cases.html">Проекты</a></li>
+          <li><a href="faq.html">Вопросы и ответы</a></li>
+          <li><a href="privacy.html">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">Дилерам</p>
+        <ul class="footer__list">
+          <li><a href="dealers.html">Условия сотрудничества</a></li>
+          <li><a href="dealers.html#price">Прайс и каталог для партнёров</a></li>
+          <li><a href="dealers.html#samples">Образцы материалов</a></li>
+          <li><a href="dealers.html#request">Запрос оптовых условий</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">Контакты</p>
+        <ul class="footer__list">
+          <li><a href="contacts.html">Контакты и как добраться</a></li>
+          <li><a href="tel:+78001013680">8 800 101-36-80</a></li>
+          <li><a href="contacts.html#consultation">Запись на консультацию</a></li>
+          <li><a href="about.html">О фабрике</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span class="footer__year" data-year>2026</span> Мебельная фабрика «Альбина», г. Кузнецк Пензенской области. Работаем с 1997 года.</p>
+      <p class="u-measure--narrow">Информация на сайте не является публичной офертой. Состав комплектации, материалы, фурнитура и срок изготовления фиксируются в спецификации к договору.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn--primary mobile-cta" href="contacts.html#consultation">Записаться на консультацию</a>
+
+</body>
+</html>
